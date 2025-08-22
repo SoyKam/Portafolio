@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio Propio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <a class="skip-link" href="#presentation">Saltar al contenido principal</a>
+    <canvas id="mouse-trail" aria-hidden="true"></canvas>
+        <nav class="navbar">
+            <a class="title" href="#presentation">
+                <span class="title__dev">Dev</span> Camilo
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__title" href="#presentation">Inicio</a></li>
+                <li class="nav__item"><a class="nav__title" href="#sobre-mi">Sobre Mi</a></li>
+                <li class="nav__item"><a class="nav__title" href="#projects">Proyectos</a></li>
+                <li class="nav__item"><a class="nav__title" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <main class="main__content">
+            <div class="code-bg-animated" aria-hidden="true"></div>
+            <!-- Sección de agradecimiento, oculta por defecto -->
+            <section class="thanks" id="gracias" style="display:none; min-height:60vh; align-items:center; justify-content:center;">
+                <div class="thanks__container" style="max-width:500px; margin:0 auto; background:var(--card); border:2px solid var(--accent); border-radius:var(--radius); box-shadow:0 2px 16px 0 #fe7e2622; padding:2.5rem 2rem; display:flex; flex-direction:column; align-items:center;">
+                    <div class="thanks__icon" style="font-size:3rem; color:var(--accent); margin-bottom:1rem;">✓</div>
+                    <h2 class="thanks__title" style="color:var(--accent); font-size:2rem; margin-bottom:.7rem; text-align:center;">¡Gracias por tu mensaje!</h2>
+                    <p class="thanks__desc" style="color:var(--text-sub); font-size:1.1rem; text-align:center;">Tu mensaje ha sido enviado correctamente.<br>Te responderé lo antes posible.</p>
+                    <a href="#presentation" class="buttons" style="margin-top:2rem;">Volver al inicio</a>
+                </div>
+            </section>
+            <!-- Fin sección de agradecimiento -->
+            <section class="showcase" id="presentation">
+                <div class="showcase__info">
+                    <span class="showcase__subtitle">Hola mundo, Soy Camilo</span>
+                    <h1 class="showcase__title">Estudiante de Ingenieria de Sistemas</h1>
+                    <p class="showcase__desc">Apasionado por la tecnología, la innovación y el aprendizaje constante.<br>
+                    Busco oportunidades para crecer profesionalmente y aportar soluciones creativas.</p>
+                    <div class="showcase__studies">
+                        <h2 class="showcase__studies-title">Estudios</h2>
+                        <ul class="showcase__studies-list">
+                            <li><strong>Bachillerato:</strong> 2016 - 2022</li>
+                            <li><strong>Pregado:</strong> Universidad Santiago de Cali 2022 - Actualmente 7mo semestre</li>
+                        </ul>
+                    </div>
+                    <div class="showcase__buttons">
+                        <a href="./assets/docs/Juan-Camilo-Arias-Parra-CV-2025.pdf" class="buttons buttons__cv" download>Descargar CV</a>
+                        <a href="#contacto" class="buttons buttons__contacto">Contáctame</a>
+                    </div>
+                    <div class="showcase__socials">
+                        <a href="#" aria-label="Computrabajo" title="Computrabajo" class="showcase__icon computrabajo" id="btn-computrabajo" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/ios-filled/50/fe7e26/briefcase.png" alt="Computrabajo"/></a>
+                        <a href="https://github.com/SoyKam" aria-label="GitHub" title="GitHub" class="showcase__icon github" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/></a>
+                        <a href="https://wa.me/573147842330" aria-label="WhatsApp" title="WhatsApp" class="showcase__icon whatsapp" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/ios-filled/50/fe7e26/whatsapp.png" alt="WhatsApp"/></a>
+                    </div>
+                </div>
+                <div class="showcase__logo-container">
+                    <div class="showcase__logo">
+                        <img src="./assets/images/Cyndaquil.png" alt="Icon" />
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="sobre-mi">
+                <div class="about__container about__container--column">
+                    <h2 class="about__title">Sobre Mí</h2>
+                    <div class="about__cards-row">
+                        <div class="about__card">
+                            <h3 class="about__card-title">¿Quién Soy?</h3>
+                            <p class="about__card-desc">Soy un Ingeniero en Sistemas y Desarrollador Web altamente motivado con sólidos conocimientos en desarrollo de software y diseño de interfaces web.</p>
+                        </div>
+                        <div class="about__card">
+                            <h3 class="about__card-title">Mi Objetivo</h3>
+                            <p class="about__card-desc">Mi objetivo es seguir aprendiendo y aplicar mis conocimientos actuales para ganar experiencia en diversas áreas como Front-end y Back-end. Me apasiona crear soluciones elegantes para problemas complejos.</p>
+                        </div>
+                        <div class="about__card">
+                            <h3 class="about__card-title">Mi Perfil</h3>
+                            <p class="about__card-desc">Me caracterizo por mi capacidad para adaptarme rápidamente a nuevos entornos de trabajo y tecnologías, mi atención al detalle y mi compromiso con la entrega de productos de alta calidad.</p>
+                        </div>
+                    </div>
+                    <h3 class="about__subtitle-techs">Mis Habilidades Técnicas</h3>
+                    <div class="about__techs about__techs--center">
+                        <div class="about__tech">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                            <span class="about__tech-name">HTML5</span>
+                        </div>
+                        <div class="about__tech">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                            <span class="about__tech-name">CSS3</span>
+                        </div>
+                        <div class="about__tech">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                            <span class="about__tech-name">JavaScript</span>
+                        </div>
+                        <div class="about__tech">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                            <span class="about__tech-name">Python</span>
+                        </div>
+                        <div class="about__tech">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+                            <span class="about__tech-name">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <div class="projects__container">
+                    <h2 class="projects__title">Proyectos</h2>
+                    <div class="projects__grid">
+                        <div class="project__card">
+                            <div class="project__image"></div>
+                            <div class="project__info">
+                                <h3 class="project__name">Proyecto 1</h3>
+                                <p class="project__desc">Próximamente...</p>
+                            </div>
+                        </div>
+                        <div class="project__card"> 
+                            <div class="project__image"></div>
+                            <div class="project__info">
+                                <h3 class="project__name">Nuevo Proyecto</h3>
+                                <p class="project__desc">Próximamente...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contacto">
+                <div class="contact__container contact__container--row" id="contactSection">
+                    <div class="contact__info">
+                        <h2 class="contact__title">Trabajemos Juntos</h2>
+                        <p class="contact__desc">Estoy interesado en oportunidades para colaborar en proyectos innovadores y desafiantes. Si tienes alguna propuesta, pregunta o simplemente quieres saludar, no dudes en contactarme a través del formulario o por mis redes sociales.</p>
+                        <div class="contact__socials">
+                            <a href="#" aria-label="Computrabajo" title="Computrabajo" class="showcase__icon computrabajo" id="btn-computrabajo-footer" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/ios-filled/50/fe7e26/briefcase.png" alt="Computrabajo"/></a>
+                            <a href="https://github.com/SoyKam" aria-label="GitHub" title="GitHub" class="showcase__icon github" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/></a>
+                            <a href="https://wa.me/573147842330" aria-label="WhatsApp" title="WhatsApp" class="showcase__icon whatsapp" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/ios-filled/50/fe7e26/whatsapp.png" alt="WhatsApp"/></a>
+                        </div>
+                    </div>
+                    <div class="contact__formbox">
+                        <form class="contact__form" id="contactForm" action="https://formsubmit.co/juancamilo.ariasparra@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="?enviado=1">
+                            <label class="sr-only" for="name">Nombre</label>
+                            <input id="name" name="name" type="text" class="contact__input" placeholder="Nombre" required>
+                            <label class="sr-only" for="email">Correo Electrónico</label>
+                            <input id="email" name="email" type="email" class="contact__input" placeholder="Correo Electrónico" required>
+                            <label class="sr-only" for="message">Tu mensaje</label>
+                            <textarea id="message" name="message" class="contact__textarea" placeholder="Tu mensaje" rows="4" required></textarea>
+                            <button type="submit" class="contact__button">Enviar Mensaje</button>
+                        </form>
+                        <div class="contact__success" id="contactSuccess" role="status" aria-live="polite" aria-hidden="true" hidden tabindex="-1">
+                            <div class="contact__success-icon">✓</div>
+                            <div class="contact__success-title">¡Mensaje Enviado!</div>
+                            <div class="contact__success-desc">Gracias por contactarme. Te responderé lo antes posible.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <span>&copy; 2025 Camilo Arias. Todos los derechos reservados.</span>
+        </footer>
+    <script src="app.js"></script>
+    </body>
+</html>
