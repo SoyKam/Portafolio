@@ -1,21 +1,3 @@
-// Contact form success message logic
-document.addEventListener('DOMContentLoaded', function() {
-    // Mostrar sección de agradecimiento si el formulario fue enviado correctamente
-    if (window.location.search.includes('enviado=1')) {
-        var gracias = document.getElementById('gracias');
-        var contacto = document.getElementById('contactSection');
-        if (gracias) {
-            gracias.style.display = 'flex';
-        }
-        if (contacto) {
-            contacto.style.display = 'none';
-        }
-        // Opcional: hacer scroll a la sección de gracias
-        setTimeout(function() {
-            gracias && gracias.scrollIntoView({behavior:'smooth'});
-        }, 200);
-    }
-});
 // Animación de escritura para el título principal de la sección de inicio
 window.addEventListener('DOMContentLoaded', () => {
     const title = document.querySelector('.showcase__title');

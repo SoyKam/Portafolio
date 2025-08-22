@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio Propio</title>
+        <title>Dev Camilo</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="./assets/images/Icon.png" type="image/x-icon">
     </head>
     <body>
     <a class="skip-link" href="#presentation">Saltar al contenido principal</a>
@@ -136,10 +137,7 @@
                         </div>
                     </div>
                     <div class="contact__formbox">
-                        <form class="contact__form" id="contactForm" action="https://formsubmit.co/juancamiloeng@gmail.com" method="POST">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://soykam.github.io/Portafolio/?enviado=1">
-                            <input type="hidden" name="_template" value="table">
+                        <form class="contact__form" action="https://formsubmit.co/juancamiloeng@gmail.com" method="POST">
                             <label class="sr-only" for="name">Nombre</label>
                             <input id="name" name="name" type="text" class="contact__input" placeholder="Nombre" required>
                             <label class="sr-only" for="email">Correo Electrónico</label>
@@ -147,12 +145,10 @@
                             <label class="sr-only" for="message">Tu mensaje</label>
                             <textarea id="message" name="message" class="contact__textarea" placeholder="Tu mensaje" rows="4" required></textarea>
                             <button type="submit" class="contact__button">Enviar Mensaje</button>
+
+                            <input type="hidden" name="_next" value="https://jcamilo.dev/#contacto">
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
-                        <div class="contact__success" id="contactSuccess" role="status" aria-live="polite" aria-hidden="true" hidden tabindex="-1">
-                            <div class="contact__success-icon">✓</div>
-                            <div class="contact__success-title">¡Mensaje Enviado!</div>
-                            <div class="contact__success-desc">Gracias por contactarme. Te responderé lo antes posible.</div>
-                        </div>
                     </div>
                 </div>
             </section>
