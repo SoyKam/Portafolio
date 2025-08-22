@@ -129,6 +129,44 @@ h1, h2, h3, h4, h5, h6, .showcase__logo, .about__tech img, .project__image, .con
 .project__card { background:var(--card); border-radius:var(--radius); box-shadow:0 2px 16px #000a; flex:1 1 45%; min-width:320px; max-width:500px; display:flex; flex-direction:column; align-items:flex-start; padding:2rem 1.5rem; transition:box-shadow .2s, transform .2s; }
 .project__card:hover { box-shadow:0 6px 32px #fe7e2655; transform:translateY(-6px) scale(1.03); }
 .project__image { width:100%; height:160px; background:#222; border-radius:10px; margin-bottom:1.2rem; }
+.project__image--main {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	background: #222;
+	border-radius: 12px;
+	overflow: hidden;
+	margin-bottom: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.project__image-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 12px;
+	display: block;
+}
+
+.project__techs {
+	margin-top: 0.7rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+.project__techs-icon {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.project__techs-name {
+	font-size: 0.95rem;
+	color: var(--text-sub);
+	margin-right: 0.7rem;
+	display: inline-block;
+}
 .project__info { width:100%; }
 .project__name { color:#fff; font-size:1.3rem; margin-bottom:.5rem; }
 .project__desc { color:var(--text-sub); font-size:1rem; }
